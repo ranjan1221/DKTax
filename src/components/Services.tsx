@@ -143,7 +143,8 @@ const Services = () => {
         'Accounting & Bookkeeping Services',
         'Digital Signature Certificate (DSC)',
         'GST Return Filing & Compliance',
-        'Export-Import Consultancy'
+        'Export-Import Consultancy',
+        'Insurance Filing'
       ]
     }
   ];

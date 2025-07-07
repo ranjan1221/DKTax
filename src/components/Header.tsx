@@ -127,7 +127,7 @@ const Header = () => {
                   });
                 }
               }}
-              aria-label="DK Tax Consultants logo"
+              aria-label="DRB Tax Consultants logo"
               tabIndex={0}
             >
               <Calculator className={`h-8 w-8 logo-icon transition-colors duration-300 ${
@@ -136,7 +136,7 @@ const Header = () => {
               <span className={`text-xl font-bold transition-colors duration-300 ${
                 isScrolled ? 'text-gray-900' : 'text-white'
               }`}>
-                DK Tax Consultants
+                DRB Tax Consultants
               </span>
             </div>
 
@@ -225,7 +225,7 @@ const Header = () => {
                 <span className={`text-sm transition-colors duration-300 ${
                   isScrolled ? 'text-gray-700' : 'text-white'
                 }`}>
-                  dkaccounts@gmail.com
+                  dkp@drbtax.in
                 </span>
               </div>
             </div>
@@ -282,7 +282,7 @@ const Header = () => {
             <div className="flex items-center space-x-3">
               <Calculator className="h-8 w-8 text-white" />
               <div>
-                <h3 className="text-white font-bold text-lg">DK Tax Consultants</h3>
+                <h3 className="text-white font-bold text-lg">DRB Tax Consultants</h3>
                 <p className="text-blue-200 text-sm">Dhiraj Kumar Pandey</p>
               </div>
             </div>
@@ -324,11 +324,11 @@ const Header = () => {
               </div>
               <div className="flex items-center space-x-3 text-blue-200" aria-label="Email address">
                 <Mail className="h-5 w-5" />
-                <span>dkaccounts@gmail.com</span>
+                <span>dkp@drbtax.in</span>
               </div>
             </div>
             <button 
-              className="w-full mt-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-4 rounded-xl font-semibold shadow-lg"
+              className="w-full bg-gradient-to-r from-[#b91c1c] to-[#f97316] text-white py-4 px-6 rounded-xl font-semibold shadow-lg relative overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:scale-105 disabled:opacity-80 disabled:cursor-not-allowed"
               onClick={() => {
                 window.open('https://wa.me/919873819147?text=Hello, I would like to get consultation', '_blank');
                 setIsMenuOpen(false);

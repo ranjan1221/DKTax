@@ -299,11 +299,11 @@ const AllReviews = () => {
   const stats = calculateStats();
 
   return (
-    <section ref={sectionRef} id="reviews" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 overflow-hidden">
+    <section ref={sectionRef} id="reviews" className="py-20 bg-gradient-to-br from-[#b91c1c] to-[#f97316] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={titleRef} className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Customer <span className="text-blue-600">Reviews</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Customer <span className="text-[#f97316]">Reviews</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Share your experience with our services
@@ -341,7 +341,7 @@ const AllReviews = () => {
                   required
                   value={feedbackData.name}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#b91c1c] focus:border-transparent transition-all duration-200"
                   placeholder="Enter your name"
                 />
               </div>
@@ -381,7 +381,7 @@ const AllReviews = () => {
                   name="service"
                   value={feedbackData.service}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#b91c1c] focus:border-transparent transition-all duration-200"
                 >
                   <option value="">Select a service</option>
                   {services.map((service, index) => (
@@ -401,7 +401,7 @@ const AllReviews = () => {
                   rows={5}
                   value={feedbackData.message}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#b91c1c] focus:border-transparent transition-all duration-200 resize-none"
                   placeholder="Share your experience..."
                 ></textarea>
               </div>
@@ -409,7 +409,7 @@ const AllReviews = () => {
               <button
                 type="submit"
                 disabled={formLoading}
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-6 rounded-xl font-semibold shadow-lg relative overflow-hidden group transition-all duration-300 hover:shadow-xl disabled:opacity-80 disabled:cursor-not-allowed"
+                className="w-full bg-gradient-to-r from-[#b91c1c] to-[#f97316] text-white py-4 px-6 rounded-xl font-semibold shadow-lg relative overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:scale-105 disabled:opacity-80 disabled:cursor-not-allowed"
               >
                 {formLoading ? (
                   <span className="flex items-center justify-center">
@@ -438,7 +438,7 @@ const AllReviews = () => {
 
             {loading ? (
               <div className="text-center py-8">
-                <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500"></div>
+                <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-[#b91c1c]"></div>
                 <p className="mt-2 text-gray-600">Loading reviews...</p>
               </div>
             ) : reviews.length === 0 ? (
@@ -451,7 +451,7 @@ const AllReviews = () => {
                   {reviews.map((review) => (
                     <div key={review.id} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
-                        <div className="bg-gradient-to-r from-blue-500 to-purple-500 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                        <div className="bg-gradient-to-r from-[#b91c1c] to-[#f97316] w-12 h-12 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
                           {review.name.charAt(0).toUpperCase()}
                         </div>
                         <div className="flex-1">
@@ -464,7 +464,7 @@ const AllReviews = () => {
                             </div>
                           </div>
                           {review.service && (
-                            <p className="text-sm text-blue-600 mb-2">{review.service}</p>
+                            <p className="text-sm text-[#b91c1c] mb-2">{review.service}</p>
                           )}
                           <p className="text-gray-700">{review.message}</p>
                           <p className="text-xs text-gray-500 mt-2">
@@ -481,7 +481,7 @@ const AllReviews = () => {
                 </div>
 
                 {/* Stats */}
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 text-white shadow-lg">
+                <div className="bg-gradient-to-r from-[#b91c1c] to-[#f97316] rounded-2xl p-6 text-white shadow-lg">
                   <div className="grid grid-cols-3 gap-4 text-center">
                     <div>
                       <div className="text-2xl font-bold">{stats.totalReviews}</div>

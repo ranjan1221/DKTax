@@ -146,7 +146,7 @@ const Footer = () => {
               onMouseLeave={(e) => handleLogoHover(e, false)}
             >
               <Calculator className="h-8 w-8 text-blue-400 footer-logo-icon" />
-              <span className="text-xl font-bold">DK Tax Consultants</span>
+              <span className="text-xl font-bold">DRB Tax Consultants</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
               Your trusted partner for comprehensive financial solutions, tax planning, 
@@ -228,7 +228,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3 group cursor-pointer">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
                 <div>
-                  <p className="text-gray-300">dkaccounts@gmail.com</p>
+                  <p className="text-gray-300">dkp@drbtax.in</p>
                   {/* <p className="text-gray-300">dkaccounts@gmail.com</p> */}
                 </div>
               </div>
@@ -240,7 +240,7 @@ const Footer = () => {
         <div ref={bottomRef} className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2024 DK Tax Consultants. All rights reserved. | Dhiraj Kumar Pandey, Tax Consultant
+              © 2024 DRB Tax Consultants. All rights reserved. | Dhiraj Kumar Pandey, Tax Consultant
             </div>
             <div className="flex space-x-6 text-sm">
               <a 

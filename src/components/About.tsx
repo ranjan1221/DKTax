@@ -202,7 +202,7 @@ const About = () => {
               taxation, GST compliance, company formation, and financial advisory services.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              As the founder of DK Tax Consultants, I am committed to providing personalized, 
+              As the founder of DRB Tax Consultants, I am committed to providing personalized, 
               reliable, and cost-effective solutions that help my clients achieve their financial 
               goals while ensuring complete regulatory compliance.
             </p>

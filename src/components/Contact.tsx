@@ -108,9 +108,9 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: ['dkaccounts@gmail.com'],
+      details: ['dkp@drbtax.in'],
       color: 'from-purple-500 to-blue-500',
-      action: () => window.open('mailto:dkaccounts@gmail.com')
+      action: () => window.open('mailto:dkp@drbtax.in')
     },
     {
       icon: MapPin,
@@ -385,7 +385,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-2xl w-full h-full"
-                title="DK Tax Consultants Office Location"
+                title="DRB Tax Consultants Office Location"
               ></iframe>
               
               {/* Map Overlay with Office Info */}
@@ -395,7 +395,7 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900">DK Tax Consultants</h4>
+                    <h4 className="font-bold text-gray-900">DRB Tax Consultants</h4>
                     <p className="text-xs sm:text-sm text-gray-600 whitespace-pre-line leading-snug break-words">
                       Plot No 12A, Lions Enclave,
                       Marble Block
