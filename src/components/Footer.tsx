@@ -152,19 +152,7 @@ const Footer = () => {
               Your trusted partner for comprehensive financial solutions, tax planning, 
               and business advisory services. Led by Tax Consultant Dhiraj Kumar Pandey.
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  className={`bg-gray-800 p-3 rounded-full ${social.color} transition-all duration-300 cursor-pointer`}
-                  onMouseEnter={(e) => handleSocialHover(e, true)}
-                  onMouseLeave={(e) => handleSocialHover(e, false)}
-                >
-                  <social.icon className="h-5 w-5" />
-                </a>
-              ))}
-            </div>
+            {/* Remove the social media icons section from the Company Info block */}
           </div>
 
           {/* Quick Links */}
@@ -176,6 +164,13 @@ const Footer = () => {
                   <a
                     href={link.href}
                     className="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2 cursor-pointer"
+                    onClick={e => {
+                      e.preventDefault();
+                      const target = document.querySelector(link.href);
+                      if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }
+                    }}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}
                   >
